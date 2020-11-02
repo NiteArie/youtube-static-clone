@@ -10,7 +10,7 @@ for ( let i = 0; i < moreCount; i++ ) {
     section.classList.add("more__videos__card");
     
     let image = document.createElement("img");
-    image.src ="/assets/placeholder.png";
+    image.src ="./assets/placeholder.png";
     image.classList.add("more__videos__card__img")
 
     let contentDiv = document.createElement("div");
