@@ -313,3 +313,33 @@ body {
     margin-left: 10px;
     border-bottom: 1px solid hsl(230, 10%, 50%);
 }
+
+@media only screen and (max-width: 1000px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "video"
+            "more";
+    }
+
+    .header .icons {
+        display: none;
+    }
+
+    .video {
+        margin: 10px auto;
+    }
+
+    .desc__heading {
+        flex-direction: column;
+    }
+
+    .desc__heading__titles {
+        margin-bottom: 10px;
+    }
+
+    .more {
+        margin: 0;
+    }
+}
