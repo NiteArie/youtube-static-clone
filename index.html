@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="icons">
+            <img class="icons__menu" src="assets/menu.svg" alt="Hamburger Menu">
+            <img class="icons__youtube" src="assets/youtube.svg" alt="Youtube Logo">
+        </div>
+        <div class="search">
+            <input class="search__input" type="search" placeholder="Search">
+            <button class="search__button" type="button">
+                <img class="search__button__icon" src="assets/search.svg" alt="Search">
+            </button>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li>
+                    <img class="nav__list__icon"src="assets/video.svg" alt="Create Video">
+                </li>
+                <li>
+                    <img class="nav__list__icon" src="assets/grid.svg" alt="Google Menu">
+                </li>
+                <li>
+                    <img class="nav__list__icon" src="assets/bell.svg" alt="Notifications">
+                </li>
+                <li>
+                    <img class="nav__list__profile" src="assets/profilePlaceholder.jpg" alt="Placeholder Profile">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="video">
+        <iframe class="video__embbed" 
+        width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+        <section class="desc">
+            <section class="desc__heading">
+                <div class="desc__heading__titles">
+                    <h3>Contributing to Open Source Part 1: The Easy Way</h3>
+                    <span>
+                        61,280 views - Feb 27, 2014
+                    </span>
+                </div>
+                <div class="desc__heading__actions">
+                    <img src="assets/thumbs-up.svg" alt="Like">
+                    <span>450</span>
+                    <img src="assets/thumbs-down.svg" alt="Dislike">
+                    <span>20</span>
+                    <img src="assets/external-link.svg" alt="Share">
+                    <span>Share</span>
+                    <img src="assets/archive.svg" alt="Save">
+                    <span>Save</span>
+                    <img src="assets/more-horizontal.svg" alt="More">
+                </div>
+            </section>
+            <section class="desc__more">
+                <img class="desc__more__profile-pic" 
+                src="assets/profilePlaceholder.jpg" alt="Content Creator">
+                <div class="desc__more__about">
+                    <div class="desc__more__about__creator">
+                        <div>
+                            <h4>The Odin Project</h4>
+                            <span>1.03K subscribers</span>
+                        </div>
+                        <button type="button">SUBSCRIBE</button>
+                    </div>
+                    <div class="desc__more__about__info">
+                        <p>
+                            How do you contribute to open source?  In this video, I'll 
+                            describe the easiest way to make a simple contribution to 
+                            an open source project -- without using the command line, 
+                            a text editor, "forking a repo", or even touching Git outside of 
+                            Github.  I'll also describe what kinds of contributions open 
+                        </p>
+                        <span>SHOW MORE</span>
+                    </div>
+                </div>
+            </section>
+            <section class="desc__comment">
+                <div class="desc__comment__label">
+                    <span>0 Comment </span>
+                    <span>Sort By</span> 
+                    <img src="assets/more-vertical.svg" alt="Sort By">
+                </div>
+                <div class="desc__comment__comments">
+                    <div class="desc__comment__comments__card">
+                        <img src="assets/profilePlaceholder.jpg" alt="Profile Picture">
+                        <span>Commenting publicly as <strong>Flyyyyyyyyyyyy</strong></span>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <section class="more">
+        <div class="more__label">
+            <span class="more__label__next">Up next</span>
+            <div class="more__label__autoplay">
+                <span>AUTOPLAY</span>
+
+            </div>
+        </div>
+        <div class="more__videos">
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
